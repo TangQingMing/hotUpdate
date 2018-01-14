@@ -1,0 +1,93 @@
+{
+    "DESCRIBE":{
+        "QUICK_BIN_PATH":"quick工具路径",
+        "SECRET_KEY":"加密时候的密钥",
+        "SIGNATURE":"加密时候的签名",   
+        "RESOURCES_PATH":"资源路径",
+        "SOURCE_PATH":"源码路径",
+        "RESOURCES_OUT_PATH":"资源加密后生成路径 默认./ResourcesOut",
+        "SOURCE_OUT_PATH":"源码加密后生成路径 默认./SourceOut",
+        "RESOURCES_BAT":"资源加密脚本",
+        "SOURCE_BAT":"源码加密脚本"
+    },
+
+    "QUICK_BIN_PATH":"E:/hotUpdate/QuickCocos2dx/quick/bin",
+    "SECRET_KEY":{
+        "ANDROID":"3078ae7353b2630",
+        "IOS":"07d93658fd6eb7a991f5551fbb037dda"
+    },
+    "SIGNATURE":{
+        "ANDROID":"gjpqst",
+        "IOS":"gjpq"
+    },
+
+    "IN_ROOT_DIRECTORY":"E:/GJQiPaiGame/ClientModule/Mobile/GamePhone",
+    "RESOURCES_PATH":"res",
+    "SOURCE_PATH":"src",
+    
+    
+    "RESOURCES_BAT":"encrypt_res.bat",
+    "SOURCE_BAT":{
+        "ANDROID":"compile_scripts.bat",
+        "IOS":"compile_scripts.sh"
+    },
+
+	"SOURCE_COMMAND_LINE":{
+		"ANDROID":"%s -i %s -o %s -ek %s -es %s -p %s%s",
+		"IOS":"%s -i %s -o %s -ek %s -es %s -p %s%s"
+    },
+    "RESOURCES_COMMAND_LINE":"%s -i %s -o %s -ek %s -es %s",
+    "OUT_ZIP_SUFFIX":{
+		"ANDROID":"",
+		"IOS":"_64"
+    },
+    "ADD_ORDER":{
+		"ANDROID":"",
+		"IOS":"-b 64"
+    },
+    
+
+    "OUT_ROOT_DIRECTORY":
+    {
+        "ANDROID":"E:/hotUpdate/Download/hotupdate_android",
+        "IOS":"E:/hotUpdate/Download/hotupdate_ios"
+    },
+    "RESOURCES_OUT_PATH":"res",
+    "SOURCE_OUT_PATH":"lib",
+    "COUNT_SIZE_OUT":"gamecfg",
+
+    "COUNT_SIZE":[
+        "baccaratnew",
+        "dzshowhand",
+        "slotmachine"
+    ],
+
+    "COUNT_SIZE_MD5":[
+        "res/faces.zip",
+        "res/fonts.zip",
+        "res/gamebutton.zip",
+        "res/gamecfgs.zip",
+        "res/gametasks.zip",
+        "res/gametitle.zip",
+        "res/heads.zip", 
+        "res/models.zip",
+        "res/particles.zip",
+        "res/plazz.zip", 
+        "res/shader.zip",
+        "res/sound.zip",
+        "res/spine.zip",
+        "res/store.zip",
+        "res/launcher.zip",
+        "lib/app.zip",
+        "lib/cocos.zip",
+        "lib/common.zip",
+        "lib/packages.zip"
+    ],
+    "fileInfoList":{
+        "ANDROID":"",
+        "IOS":""
+    },
+    "fileInfoListModel":"\n\t\t{name = \"%s\", code = \"%s\", size = %s},",
+    "flist":"local flist = {\n\tappVersion = \"1.0.0.1\",\n\tversion = \"1.0.0.6\",\n\tdirPaths = {\n\t\t{name = \"lib\"},\n\t\t{name = \"res\"},\n\t},\n\tfileInfoList = {%s\n\t}, \n}\nreturn flist"
+    
+}

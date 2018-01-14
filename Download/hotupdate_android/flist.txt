@@ -1,0 +1,30 @@
+local flist = {
+	appVersion = "1.0.0.1",
+	version = "1.0.0.6",
+	dirPaths = {
+		{name = "lib"},
+		{name = "res"},
+	},
+	fileInfoList = {
+		{name = "res/faces.zip", code = "24d7d6c25555bbc44eb0329dbec0d2df", size = 2175731},
+		{name = "res/fonts.zip", code = "392827e46138cddb0aa333917d126865", size = 23408994},
+		{name = "res/gamebutton.zip", code = "b9f74381f18af466f6a2ef8307ea65da", size = 1145651},
+		{name = "res/gamecfgs.zip", code = "1db6df062762094b5810941b2b52f7b8", size = 8257},
+		{name = "res/gametasks.zip", code = "687abfa2f71d557218e4d8079d374132", size = 44167},
+		{name = "res/gametitle.zip", code = "a8b56e30282ac6b6bd81c0a609d82b2e", size = 52607},
+		{name = "res/heads.zip", code = "e52607c336f429d9776e1a4629ef346e", size = 96217},
+		{name = "res/models.zip", code = "b2cc27b1856d7d7ba7647302dd72e3d2", size = 20160015},
+		{name = "res/particles.zip", code = "0cab0672c0f15439b345af083ff278d7", size = 15575},
+		{name = "res/plazz.zip", code = "d28467afcede08322aa5552e22ca2d8e", size = 14167389},
+		{name = "res/shader.zip", code = "ae93aebe005f26e0342297ff564df4e5", size = 5980},
+		{name = "res/sound.zip", code = "3361610c799ecb7ea4c1cf9b61a2016e", size = 795584},
+		{name = "res/spine.zip", code = "018eadbb2a9425fc01fecda57ae77f5d", size = 3624375},
+		{name = "res/store.zip", code = "fb5c4813592d55ed69f22c0108943896", size = 1133820},
+		{name = "res/launcher.zip", code = "b13fa6cd27a4f5e4d50157e852435acf", size = 3185581},
+		{name = "lib/app.zip", code = "63ffa7d921b416acd6a5ce58f6fb57ef", size = 380495},
+		{name = "lib/cocos.zip", code = "db487ce9e037066e00984d8b230b6705", size = 117441},
+		{name = "lib/common.zip", code = "9b1aff64e422da963cdafc902b8d810b", size = 125635},
+		{name = "lib/packages.zip", code = "32d02eb118351dd45747b21c5799b4e2", size = 2121},
+	}, 
+}
+return flist
