@@ -20,7 +20,7 @@ def NewPath(key):
     configJson[key]={}
     configJson[key]["ANDROID"]=AddPath(configJson["OUT_ROOT_DIRECTORY"]["ANDROID"],tempStr)
     configJson[key]["IOS"]=AddPath(configJson["OUT_ROOT_DIRECTORY"]["IOS"],tempStr)
-#初始化配置文件
+
 def InitConfigJosn():
     global configJson
     if systemType=="Windows":
@@ -87,17 +87,16 @@ def CountSize():
         SetTotalSize(fileName, "ANDROID")
         SetTotalSize(fileName, "IOS")
 
-#计算文件的MD5
 def File_md5(filename):  
-    calltimes = 0     #分片的个数  
+    calltimes = 0     
     hmd5 = hashlib.md5()  
     fp = open(filename, "rb")  
-    f_size = os.stat(filename).st_size #得到文件的大小  
+    f_size = os.stat(filename).st_size 
     if f_size > _FILE_SLIM:  
         while (f_size > _FILE_SLIM):  
             hmd5.update(fp.read(_FILE_SLIM))  
             f_size /= _FILE_SLIM  
-            calltimes += 1  # delete    #文件大于100M时进行分片处理  
+            calltimes += 1  # delete
         if (f_size > 0) and (f_size <= _FILE_SLIM):  
             hmd5.update(fp.read())  
     else:  
